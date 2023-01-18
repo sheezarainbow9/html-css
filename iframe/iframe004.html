@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>iframes - segurança</title>
+    </head>
+
+    <body>
+        <h1>Meu site principal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque dolorem velit soluta eveniet
+            distinctio, quas error obcaecati, dicta rerum consequuntur earum deserunt vitae voluptas explicabo minima
+            eum provident fugit!</p>
+        <!--sandbox="sandbox" bloqueia todo acesso que outros sites dentro do iframe tentem fazer cadastro de pessoas-->
+        <!--referrerpolicy="no-referrer'" é mais um item de segurança de iframes-->
+        <!--sandbox="allow-same-origin allow-forms allow-scripts" - permite cadastrar certos dados-->
+        <iframe src="paginas-extra/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts"
+            referrerpolicy="no-referrer">
+            Seu navegador não é compatível com isso...
+        </iframe>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quam sit mollitia eum ipsum fuga repellat
+            incidunt id exercitationem, non at. Eaque maxime culpa laboriosam laudantium unde minima ducimus deserunt.
+        </p>
+    </body>
+
+</html>
