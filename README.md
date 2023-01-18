@@ -1,2 +1,2 @@
 # html-css
-Frontend studies
+FrontEnd studies.
