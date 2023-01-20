@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Estilos para impressoras */
+
+* {
+  margin: 10px;
+  padding: 10px;
+}
+
+html {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+/* Menu não vai aparecer no modo impressão */
+menu {
+  display: none;
+}
+
+article {
+  width: 100%;
+}
+
+/* Configura mensagem no 'rodapé' no modo impressão */
+article::after {
+  content: "Esse artigo foi impresso através do site www.cursoemvideo.com";
+}
